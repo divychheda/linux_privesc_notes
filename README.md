@@ -44,7 +44,7 @@ Invalid command 'root:$6$Tb/euwmK$OXA.dwMeOAcopwBl68boTG5zi65wIHsc84OWAIye5VITLL
 ```
 
 ## SUID & SGID
-- find / -type f -a \\( -perm -u+s-o -perm -g+s\\) -exec ls -l {} \; 2> /dev/null (to find suid,sgid files)
+- find / -type f \\( -perm -u+s -o -perm -g+s \\) -exec ls -l {} \\; 2> /dev/null (to find suid,sgid files)
 - get names and versions of these programs and search for their exploits searchsploit, github, google
 
 ## Environment variables 
