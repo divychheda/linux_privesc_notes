@@ -1,4 +1,5 @@
-LinPeas - https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
+LinPeas - https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS 
+(best; run first; if don't find anything run the others)
 
 LinEnum - https://github.com/rebootuser/LinEnum
 
