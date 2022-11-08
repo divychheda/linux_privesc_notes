@@ -10,4 +10,11 @@
 ## LD_PRELOAD
 - Follow the steps here : https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/
 
-## 
+## CVE-2019-14287
+- If a user is restricted from using root, i.e, `user ALL=(ALL,!root) /bin/bash` appearing in `sudo -l`
+- Then it may be vulnerable to this cve (check sudo version with `sudo -V`): https://www.exploit-db.com/exploits/47502
+
+## CVE-2019-18634 (sudo buffer overflow)
+- Works on specific versions of sudo when password feedback is enabled
+- How to check for pwfeedback? just type any sudo command and see if asterisks appear during typing the passwords.
+- check sudo version and try to exploit: https://github.com/saleemrashid/sudo-cve-2019-18634
