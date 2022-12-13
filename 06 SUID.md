@@ -33,3 +33,18 @@ strace <file> 2>&1 | grep -i -E "open|access|no such file"
 ```
 - wait for nginx to be restarted / rotated
 - and done.
+
+## Environment variables
+- if in all the suid bins, some bin is calling other binaries using relative path.
+- check using: `strings bin-name`
+- if relative path being used, one can make a malicious bin with the same name as the one with relative path in sany dir like `tmp`
+- now, edit the PATH env var to have that dir with most priority:
+```
+export PATH=/tmp:$PATH
+```
+- now on running the org suid bin, we execute the malicious code.
+
+<br><br>
+- if on the other hand absolute path is used in some suid bin (strings output)
+- one can make a shell function with that name
+![image](https://user-images.githubusercontent.com/64409788/207397900-b619e1e2-10f6-4e86-a61f-1788ec45f5e9.png)
