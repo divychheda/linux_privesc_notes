@@ -30,6 +30,6 @@ systemctl list-timers --all
 - We only have read permissions to it, cant overwrite.
 - Because /home/user is in the PATH, we can do:
 ![image](https://user-images.githubusercontent.com/64409788/208084938-38551ee0-c329-4090-99c2-2006dfc897c2.png)
-TODO: read up on checkpoints and tar.
+TODO: read up on checkpoints and tar: https://materials.rangeforce.com/tutorial/2019/11/08/Linux-PrivEsc-Wildcard/
 
 
